@@ -1,0 +1,42 @@
+<template>
+  <home></home>
+</template>
+
+<script>
+import home from '@/containers/home'
+
+export default {
+  data () {
+    return {
+      text: '12'
+    }
+  },
+
+  components: {
+    home
+  },
+
+  methods: {
+    bindViewTap () {
+      const url = '../logs/main'
+      if (mpvuePlatform === 'wx') {
+        mpvue.switchTab({ url })
+      } else {
+        mpvue.navigateTo({ url })
+      }
+    },
+    clickHandle (ev) {
+      console.log('clickHandle:', ev)
+      // throw {message: 'custom test'}
+    }
+  },
+
+  created () {
+    // let app = getApp()
+  }
+}
+</script>
+
+<style scoped>
+
+</style>
