@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  props: ['contentType'],
   data: function () {
     return {
       tabs: {
@@ -15,13 +16,17 @@ export default {
         1: '推荐',
         2: '附近'
       },
-      selectedIndex: '1'
+      selectedIndex: this.contentType
     }
   },
   methods: {
     handleClick: function (e) {
       this.selectedIndex = e.target.dataset.index
+      this.$emit('switchContent', this.selectedIndex)
     }
+  },
+  onShow: function () {
+    console.log('show: ', this.selectedIndex)
   }
 }
 </script>

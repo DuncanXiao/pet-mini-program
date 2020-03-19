@@ -21,6 +21,9 @@ export default {
         console.log('searchValue: ', this.searchValue)
       }
     }
+  },
+  created: function () {
+    console.log('components search created')
   }
 }
 </script>

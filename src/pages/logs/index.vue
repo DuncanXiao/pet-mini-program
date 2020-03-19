@@ -37,6 +37,7 @@ export default {
   },
 
   created () {
+    console.log('pages logs created')
     let logs
     if (mpvuePlatform === 'my') {
       logs = mpvue.getStorageSync({key: 'logs'}).data || []

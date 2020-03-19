@@ -25,6 +25,9 @@ export default {
     decrement () {
       store.commit('decrement')
     }
+  },
+  create: function () {
+    console.log('pages counter created')
   }
 }
 </script>

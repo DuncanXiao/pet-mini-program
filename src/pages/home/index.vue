@@ -33,6 +33,7 @@ export default {
 
   created () {
     // let app = getApp()
+    console.log('pages home creacted')
   }
 }
 </script>

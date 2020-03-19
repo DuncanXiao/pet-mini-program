@@ -1,6 +1,6 @@
 <template>
   <div class="recommend-container">
-    
+    <img src="../../../../static/tabs/orders.png"/>
   </div>
 </template>
 
@@ -15,6 +15,10 @@ export default {
     handleClick: function (e) {
       this.selectedIndex = e.target.dataset.index
     }
+  },
+  onLoad: function () {
+    console.log('recommend')
+    return 'aaa'
   }
 }
 </script>
