@@ -22,6 +22,7 @@ export default {
 .card-container {
   border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .pet-image {
   width: 100%;
