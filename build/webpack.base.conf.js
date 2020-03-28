@@ -43,7 +43,7 @@ let baseWebpackConfig = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.json', '.png', '.svg', '.jpg'],
     alias: {
       'vue': 'mpvue',
       '@': resolve('src')
@@ -120,7 +120,7 @@ let baseWebpackConfig = {
     }),
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, '../static'),
+        from: path.resolve(__dirname, '../src/static'),
         to: path.resolve(config.build.assetsRoot, './static'),
         ignore: ['.*']
       }

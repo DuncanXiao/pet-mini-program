@@ -1,15 +1,32 @@
 <template>
   <div class="recommend-container">
-    <img src="../../../../static/tabs/orders.png"/>
+    <div id="left-column" class="left-column">
+      <template v-for="pet in listLeft">
+        <card :pet="pet" :key="pet.id" />
+      </template>
+    </div>
+    <div id="right-column" class="right-column">
+      <template v-for="pet in listRight">
+        <card :pet="pet" :key="pet.id" />
+      </template>
+    </div>
   </div>
 </template>
 
 <script>
+import Waterfalls from '@/utils/waterfallsFlow'
+import card from './card'
+import mock from './mock'
+
 export default {
   data: function () {
     return {
-      images: []
+      listLeft: [],
+      listRight: []
     }
+  },
+  components: {
+    card
   },
   methods: {
     handleClick: function (e) {
@@ -17,8 +34,12 @@ export default {
     }
   },
   onLoad: function () {
-    console.log('recommend')
     return 'aaa'
+  },
+  mounted: function () {
+    const WaterfallsA = Waterfalls.bind(this)
+    const waterfalls = new WaterfallsA()
+    waterfalls.start(mock.pets, this)
   }
 }
 </script>
@@ -29,6 +50,10 @@ export default {
   justify-content: center;
   margin-top: 10px;
   line-height: 30px;
+}
+.left-column, .right-column {
+  padding: 5px;
+  width: 50%;
 }
 .tab {
   padding: 0 25px;
