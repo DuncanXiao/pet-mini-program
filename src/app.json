@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/cloudRaise/main",
+    "pages/cloudRaiseNews/main",
     "pages/home/main",
     "pages/logs/main",
     "pages/counter/main"
