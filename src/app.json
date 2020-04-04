@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/profile/main",
     "pages/cloudRaise/main",
     "pages/cloudRaiseNews/main",
     "pages/home/main",
@@ -29,8 +30,8 @@
       "iconPath": "static/tabs/orders.png",
       "selectedIconPath": "static/tabs/orders-active.png"
     }, {
-      "text": "counter",
-      "pagePath": "pages/counter/main",
+      "text": "我的",
+      "pagePath": "pages/profile/main",
       "iconPath": "static/tabs/orders.png",
       "selectedIconPath": "static/tabs/orders-active.png"
     }],
