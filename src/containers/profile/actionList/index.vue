@@ -34,7 +34,7 @@ export default {
   margin-bottom: 10px;
   font-size: 15px;
   border-bottom: 1px solid #e5e5e5;
-  padding-left: 10px;
+  padding-left: 17px;
 }
 .other {
   border: 2px solid black;

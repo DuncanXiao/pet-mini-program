@@ -1,6 +1,8 @@
 {
   "pages": [
+    "pages/mallOrder/main",
     "pages/profile/main",
+    "pages/editUser/main",
     "pages/cloudRaise/main",
     "pages/cloudRaiseNews/main",
     "pages/home/main",
