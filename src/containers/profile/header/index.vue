@@ -8,7 +8,7 @@
     <div v-for="(item, index) in userInfo.pets" :key="index">
       <swiper-item>
         <image class="pet-box" :src="item.coverImage" mode="center"/>
-        <div class="pet-detail">
+        <div class="pet-detail" @click="editPet">
           <text class="pet-name">{{item.name}}</text>
           <div class="pet-info">
             <text class="pet-type">{{item.type}}</text>
@@ -29,6 +29,11 @@ export default {
   data: function () {
     return {
       petEditImage: require('@/static/images/post.png')
+    }
+  },
+  methods: {
+    editPet () {
+      console.log('edit')
     }
   }
 }

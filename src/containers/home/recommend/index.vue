@@ -1,14 +1,19 @@
 <template>
-  <div class="recommend-container">
-    <div id="left-column" class="left-column">
-      <template v-for="pet in listLeft">
-        <card :pet="pet" :key="pet.id" />
-      </template>
+  <div class="wrapper">
+    <div class="recommend-container">
+      <div id="left-column" class="left-column">
+        <template v-for="pet in listLeft">
+          <card :pet="pet" :key="pet.id" />
+        </template>
+      </div>
+      <div id="right-column" class="right-column">
+        <template v-for="pet in listRight">
+          <card :pet="pet" :key="pet.id" />
+        </template>
+      </div>
     </div>
-    <div id="right-column" class="right-column">
-      <template v-for="pet in listRight">
-        <card :pet="pet" :key="pet.id" />
-      </template>
+    <div class="button-container">
+      <image class="add-image" @click="add" src="../../static/images/like.png" model="aspectFill"/>
     </div>
   </div>
 </template>
@@ -31,7 +36,14 @@ export default {
   methods: {
     handleClick: function (e) {
       this.selectedIndex = e.target.dataset.index
+    },
+    add () {
+      const url = '../../pages/publish/main'
+      wx.navigateTo({ url })
     }
+  },
+  onShow: function () {
+    console.log('show')
   },
   onLoad: function () {
     return 'aaa'
@@ -50,6 +62,7 @@ export default {
   justify-content: center;
   margin-top: 10px;
   line-height: 30px;
+  margin-bottom: 30px;
 }
 .left-column, .right-column {
   padding: 5px;
@@ -62,5 +75,16 @@ export default {
 .selectedTab {
   font-weight: 500;
   font-size: 20px;
+}
+.button-container {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 0px;
+  background-color: white;
+}
+.add-image {
+  width: 30px;
+  height: 30px;
 }
 </style>

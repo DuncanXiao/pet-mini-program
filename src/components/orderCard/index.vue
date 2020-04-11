@@ -1,7 +1,7 @@
 <template>
   <div class="oder-card-container">
     <div class="good-container">
-      <image class="photo" :src="good.url" mode="aspectFill" />
+      <image class="photo" :src="good.url" model="aspectFill" />
       <div class="name">
         {{good.name}}
       </div>

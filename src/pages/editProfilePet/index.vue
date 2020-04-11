@@ -1,9 +1,9 @@
 <template>
-  <home></home>
+  <editProfilePet />
 </template>
 
 <script>
-import home from '@/containers/home'
+import editProfilePet from '@/containers/editProfilePet'
 
 export default {
   data () {
@@ -13,7 +13,7 @@ export default {
   },
 
   components: {
-    home
+    editProfilePet
   }
 }
 </script>

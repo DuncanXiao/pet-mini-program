@@ -1,11 +1,12 @@
 {
   "pages": [
     "pages/home/main",
+    "pages/profile/main",
+    "pages/publish/main",
     "pages/addressManage/main",
     "pages/consigneeInfo/main",
     "pages/order/main",
     "pages/mallOrder/main",
-    "pages/profile/main",
     "pages/editUser/main",
     "pages/cloudRaise/main",
     "pages/cloudRaiseNews/main",
@@ -30,8 +31,8 @@
       "iconPath": "static/tabs/home.png",
       "selectedIconPath": "static/tabs/home-active.png"
     }, {
-      "text": "订单",
-      "pagePath": "pages/logs/main",
+      "text": "云养",
+      "pagePath": "pages/cloudRaise/main",
       "iconPath": "static/tabs/orders.png",
       "selectedIconPath": "static/tabs/orders-active.png"
     }, {

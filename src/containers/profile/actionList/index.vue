@@ -4,7 +4,7 @@
       <div class="list-wapper">
         <p class="title"><span class="other"/>{{item.title}}</p>
         <div class="actions-container">
-          <div class="actions-wapper" v-for="(action, i) in item.actions" :key="i">
+          <div class="actions-wapper" v-for="(action, i) in item.actions" :key="i" @click="action.redirect">
             <image class="action-icon" :src="action.icon" model="center"/>
             <p class="text">{{action.text}}</p>
           </div>

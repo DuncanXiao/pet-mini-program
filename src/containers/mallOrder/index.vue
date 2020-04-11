@@ -37,11 +37,12 @@ import pendingReceived from './pendingReceived'
 import afterSale from './afterSale'
 import completed from './completed'
 export default {
-  props: ['goods'],
+  props: ['goods', 'state'],
   data () {
+    const { state } = this
     return {
       tabs: ['待付款', '待收货', '已完成', '售后'],
-      activeIndex: 0
+      activeIndex: state
     }
   },
   components: {

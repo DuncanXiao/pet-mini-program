@@ -1,7 +1,7 @@
 <template>
   <div class="card-container">
     <div class="card-wapper">
-     <image class="card-image" :src="good.url" model="aspectFill"/>
+     <image class="card-image" :src="good.url" mode="aspectFill"/>
       <div class="card-detail">
         <div class="name">{{good.name}}</div>
         <div class='price-total'>

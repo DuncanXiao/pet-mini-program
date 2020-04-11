@@ -1,9 +1,10 @@
 <template>
-  <home></home>
+  <div>
+    
+  </div>
 </template>
 
 <script>
-import home from '@/containers/home'
 
 export default {
   data () {
@@ -13,7 +14,7 @@ export default {
   },
 
   components: {
-    home
+    editProfilePet
   }
 }
 </script>
