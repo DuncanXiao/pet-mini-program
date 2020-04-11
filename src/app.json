@@ -1,11 +1,14 @@
 {
   "pages": [
+    "pages/home/main",
+    "pages/addressManage/main",
+    "pages/consigneeInfo/main",
+    "pages/order/main",
     "pages/mallOrder/main",
     "pages/profile/main",
     "pages/editUser/main",
     "pages/cloudRaise/main",
     "pages/cloudRaiseNews/main",
-    "pages/home/main",
     "pages/logs/main",
     "pages/counter/main"
   ],
